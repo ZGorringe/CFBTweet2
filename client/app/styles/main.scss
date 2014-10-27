@@ -2,6 +2,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "partials/signup";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -17,25 +18,23 @@ body {
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+$brand-primary:         #404040 !default;
+$brand-success:         #04BF9D !default;
+$brand-info:            #34D0CA !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #F53D54 !default;
+$brand-dark:    #404040 !default;
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
 
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-}
+//== Scaffolding
+//
+// ## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #fbfbff !default;
+//** Global text color on `<body>`.
+$text-color:            $brand-dark !default;
+
 
 /* Custom page footer */
 .footer {
