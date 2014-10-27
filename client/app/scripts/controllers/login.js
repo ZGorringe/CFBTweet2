@@ -16,7 +16,7 @@ angular.module('cfbTweet')
     $scope.signup = signup = {};
     signup.user = user = {};
 
-    signup.submit = function () {
+    $scope.signupSubmit = function () {
     	if (
     			!user.firstname ||
     			!user.lastname ||
@@ -33,10 +33,10 @@ angular.module('cfbTweet')
     	console.log(user);
     	var request = $http.post('/signup', user);
     	request.success(function (data) {
-            console.log(data.msg);
+            console.log(data);
     	});
     	request.error(function (data) {
-            console.log(data.msg);
+            console.log(data);
     	});
     };
 
